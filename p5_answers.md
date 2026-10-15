@@ -14,4 +14,7 @@
 
 예측이 틀린 문제가 있으면 번호와 이유를 한 줄씩 적습니다. 다 맞았으면 "모두 맞음" 이라고 적습니다.
 
-- 
+- 2번: .tip이 나중에 작성되어 blue가 적용될 것으로 예상했지만, .tip.big은 클래스 선택자가 2개이므로 우선순위가 더 높아 orange가 적용되었다.
+- 3번: .urgent가 HTML의 class에 나중에 적혀 있어 red가 적용될 것으로 예상했지만, CSS에서 .memo가 나중에 선언되어 gray가 적용되었다.
+- 4번: ID 선택자인 #panel의 우선순위가 높아 red가 적용될 것으로 예상했지만, .info의 color에 !important가 있어 blue가 적용되었다. 글자 크기는 !important가 없으므로 #panel의 20px이 적용되었다.
+- 5번: ID 선택자인 #hero의 green이 적용될 것으로 예상했지만, HTML 요소에 직접 작성한 style="color: purple;"의 우선순위가 더 높아 purple이 적용되었다.
